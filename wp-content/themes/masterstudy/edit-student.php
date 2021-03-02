@@ -158,8 +158,8 @@ $alphabet = range('A', 'J');
                       <div class="form-group">
                         <label class="form-label">Class</label>
                         <select name="course_id" id="course_id" class="form-control">
-                          <?php foreach($courses as $course): ?>
                           <option value="">Please Select Class</option>
+                          <?php foreach($courses as $course): ?>
                           <option value="<?php echo $course['Id']; ?>" <?php echo $course['Id'] == $student['course_id'] ? "selected":""; ?>><?php echo $course['post_title']; ?>
                           </option>
                           <?php endforeach; ?>
